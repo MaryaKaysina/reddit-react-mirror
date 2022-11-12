@@ -5,6 +5,8 @@ import { indexTemplate} from '../server/indexTemplate';
 import axios from 'axios';
 import cors from 'cors';
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 app.use(cors());
@@ -34,6 +36,6 @@ app.get('*', (req, res) => {
   );
 });
 
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`Server started on http://localhost:${PORT}`);
 });

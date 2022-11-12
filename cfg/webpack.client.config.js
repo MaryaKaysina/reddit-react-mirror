@@ -20,6 +20,14 @@ function setupDevtool() {
   if (IS_PROD) return false;
 }
 
+function getEntry() {
+  if (IS_PROD) return [path.resolve(__dirname, '../src/client/index.jsx')];
+  return [
+    path.resolve(__dirname, '../src/client/index.jsx'),
+    'webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr',
+  ]
+}
+
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -28,10 +36,7 @@ module.exports = {
     }
   },
   mode: NODE_ENV ? NODE_ENV : 'development',
-  entry: [
-    path.resolve(__dirname, '../src/client/index.jsx'),
-    'webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr',
-  ],
+  entry: getEntry(),
   output: {
     path: path.resolve(__dirname, '../dist/client'),
     filename: 'client.js',

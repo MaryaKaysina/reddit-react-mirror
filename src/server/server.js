@@ -4,12 +4,18 @@ import { App} from '../App';
 import { indexTemplate} from '../server/indexTemplate';
 import axios from 'axios';
 import cors from 'cors';
+import compression from 'compression';
+import helmet from 'helmet';
 
 const PORT = process.env.PORT || 3000;
 
 const app = express();
-
 app.use(cors());
+app.use(compression());
+app.use(helmet({
+  contentSecurityPolicy: false,
+  crossOriginEmbedderPolicy: false,
+}));
 
 app.use('/static', express.static('./dist/client'));
 

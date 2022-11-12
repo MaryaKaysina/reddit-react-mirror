@@ -1,0 +1,93 @@
+.commentBlock {
+  display: flex;
+  margin: 32px 0;
+}
+
+.threadline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 21px;
+}
+
+.threadline div {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.line {
+  background: #D9D9D9;
+  height: 100%;
+  width: 3px;
+}
+
+.list {
+  margin-top: 5px;
+}
+
+.userLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px 0 0;
+}
+
+.avatar {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0;
+}
+
+.username {
+  margin-right: 3px;
+  color: var(--orange);
+  position: relative;
+  z-index: 1;
+}
+
+@media all and (min-width: 1024px) {
+  .userLink {
+    padding: 0 0 0 5px;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .userLink:hover a {
+    text-decoration: underline;
+  }
+}
+
+.metaData {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.createdAt, .createdAt span {
+  margin-right: 10px;
+  color: var(--grey99);
+}
+
+@media all and (min-width: 1024px) {
+  .metaData {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #D9D9D9;
+}
+
+.commentText {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}

@@ -1,0 +1,83 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  min-width: 200px;
+  min-height: 160px;
+  width: 80%;
+  max-width: 1400px;
+  padding: 52px 60px 45px;
+  margin-bottom: 25px;
+}
+
+.modalHeader {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* karma */
+.karmaCounter > * + * {
+  padding: 0 0 0 4px;
+}
+
+.karmaValue {
+  color: var(--greyC4);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.down svg {
+  transform: rotate(180deg);
+}
+
+@media all and (min-width: 1024px) {
+  .karmaCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+  .karmaCounter > * + * {
+    padding: 7px 0 0;
+  }
+
+  .karmaValue {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .karmaCounter > button.up:hover > svg > path {
+    fill: var(--green);
+  }
+
+  .karmaCounter > button.down:hover > svg > path {
+    fill: var(--orange);
+  }
+}
+
+.content * {
+  max-height: 100%;
+}
+
+.divider {
+  height: 1px;
+  background: var(--greyD9);
+}
+
+.close {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: -24px;
+  color: #000
+}

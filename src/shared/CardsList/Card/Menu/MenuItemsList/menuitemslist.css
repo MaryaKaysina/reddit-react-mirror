@@ -1,0 +1,54 @@
+.menuItemsList {
+  padding: 0 20px;
+}
+
+.menuItemsList div:last-child .divider{
+  display: none;
+}
+
+.menuItem {
+  padding: 12px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.menuItem svg {
+  fill: #999999;
+}
+
+.menuItem span {
+  margin-left: 7px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--greyEC);
+}
+
+.isHide {
+  display: none;
+}
+
+.isHide + .divider {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .isHide {
+    display: flex;
+  }
+
+  .isHide + .divider {
+    display: block;
+  }
+
+  .menuItem:hover span {
+    color: var(--orange);
+  }
+
+  .menuItem:hover svg {
+    fill: var(--orange);
+  }
+}

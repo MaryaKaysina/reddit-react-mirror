@@ -1,0 +1,21 @@
+@media all and (min-width: 1024px) {
+  .cardsList {
+    padding: 40px 0;
+  }
+}
+
+.loadMore {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  height: 50px;
+  background: #CC6633;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}

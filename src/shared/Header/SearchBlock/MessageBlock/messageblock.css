@@ -1,0 +1,20 @@
+.messageBlock {
+  display: flex;
+  align-items: center;
+}
+
+.messageCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #CC6633;
+}

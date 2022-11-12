@@ -1,0 +1,19 @@
+.menuItemsList {
+  display: flex;
+}
+
+.menuItemsList > div:not(:last-child) {
+  margin-right: 27px;
+}
+
+.menuItem {
+  display: flex;
+}
+
+.menuItem > div {
+  margin-right: 5px;
+}
+
+.menuItem svg {
+  fill: #999999;
+}

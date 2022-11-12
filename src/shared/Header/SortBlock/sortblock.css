@@ -1,0 +1,50 @@
+.sortBlock {
+  background-color: var(--white);
+  padding: 11px 20px;
+  border-radius: 7px;
+  margin: 0 0 20px;
+}
+
+.sortButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sortButton div:first-child {
+  margin-right: 5px;
+}
+
+.sortButton span {
+  margin-right: 3px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 50%;
+  top: 10px;
+  z-index: 1;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+  border-radius: 3px;
+  background-color: var(--white);
+  transform: translate(75%, -15%);
+}
+
+.arrow {
+  margin-right: 0!important;
+  margin-left: auto;
+}
+
+@media all and (min-width: 1024px) {
+  .sortBlock {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .arrow {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

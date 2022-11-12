@@ -5,7 +5,7 @@ const { DefinePlugin } = require('webpack');
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const GLOBAL_CSS_REGEXP = /\.global\.css$/;
-const COMMON_PLUGINS = [ new DefinePlugin({ 'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'` }) ];
+const COMMON_PLUGINS = [ new DefinePlugin({ 'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'`, 'process.env.REDIRECT': `'${process.env.REDIRECT}'` }) ];
 
 module.exports = {
   target: 'node',

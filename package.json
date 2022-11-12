@@ -9,9 +9,9 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development CLIENT_ID=u2aHuP_9xhoGjeCfSwTk4g node ./bin/dev.js",
-    "test": "jest",
-    "start": "node ./dist/server/server.js"
+    "dev": "cross-env NODE_ENV=development CLIENT_ID=u2aHuP_9xhoGjeCfSwTk4g SECRET=4fYKchScG2TjRY-wtY2nqF15_dpFBA REDIRECT=http://localhost:3000/auth node ./bin/dev.js",
+    "start": "cross-env CLIENT_ID=82Z-T4IOjyF-yeUTTsYqPg SECRET=x48lf_HzbZCJjunUpwyVXK-NfOdxDg REDIRECT=https://reddit-react-mirror.herokuapp.com/auth node ./dist/server/server.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

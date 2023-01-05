@@ -15,6 +15,3 @@
 ## Тестирование
 
 Команда: `npm run test`.
-
-
-Demo: https://reddit-react-mirror.herokuapp.com/
